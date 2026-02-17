@@ -1,36 +1,270 @@
-@media (max-width:991px) {
-    section{
-        padding: 30px 0;
+/* ===== Responsive Styles – Modern & Advanced ===== */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    h1 {
+        font-size: 3rem !important;
     }
-    h2{
-        font-size: 30px;
-        line-height: 40px;
+    h2 {
+        font-size: 2.4rem !important;
     }
-    h3{
-        font-size: 20px;
+    .banner-section {
+        min-height: 90vh;
     }
-    .menu-navbar-nav{
+    .services-wrapper .card {
+        padding: 25px 15px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    section {
+        padding: 60px 0 !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.3;
+    }
+    h2 {
+        font-size: 2rem !important;
+        line-height: 1.3;
+    }
+    h3 {
+        font-size: 1.3rem !important;
+    }
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Navigation */
+    .menu-navbar-nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header-wrapper .nav-item {
+        margin: 10px 0;
+    }
+    .header-wrapper .nav-item .nav-link {
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+
+    /* Banner */
+    .banner-section {
+        min-height: 80vh;
+        background-position: 70% center;
+    }
+
+    /* About */
+    .about-wrapper .col-lg-5 {
+        margin-bottom: 30px;
         text-align: center;
     }
-    .portfolio-section .card{
-        min-height: 400px;
+    .about-wrapper img {
+        max-width: 80%;
+        margin: 0 auto;
     }
-    
+    .about-wrapper .nav-pills {
+        justify-content: center !important;
+    }
+    .single-progress {
+        max-width: 100%;
+    }
+
+    /* Services */
+    .services-wrapper .card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    .services-wrapper .card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Portfolio */
+    .portfolio-section .card {
+        min-height: 300px;
+    }
+    .portfolio-section .card span {
+        height: 300px;
+    }
+
+    /* Contact */
+    .contact-section .row {
+        flex-direction: column-reverse;
+    }
+    .contact-section .col-lg-6:first-child {
+        margin-top: 40px;
+    }
+    .contact-section img {
+        max-width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Footer */
+    .footer-section .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-section .col-lg-4 {
+        width: 100%;
+    }
+    .footer-section .social-icon {
+        justify-content: center;
+    }
 }
-@media (max-width:767px) {
-    h1{
-        font-size: 48px !important;
-        line-height: 48px;
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    section {
+        padding: 50px 0 !important;
     }
-    h2{
-        font-size: 25px !important;
+    h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
     }
-    p{
-        font-size: 15px;
-        line-height: 24px;
+    h2 {
+        font-size: 1.8rem !important;
     }
-    .portfolio-section .card{
-        min-height: 500px;
+    h3 {
+        font-size: 1.2rem !important;
     }
-    
+    h6 {
+        font-size: 0.9rem !important;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Banner */
+    .banner-section {
+        min-height: 70vh;
+        background-image: none; /* optional: simplify on mobile */
+        background-color: var(--bg-dark-blue);
+    }
+    .banner-section h1 {
+        font-size: 2rem !important;
+    }
+
+    /* About */
+    .about-wrapper img {
+        max-width: 90%;
+    }
+    .about-wrapper ul li .nav-link {
+        font-size: 0.85rem;
+        padding: 6px 15px;
+    }
+    .single-progress h6 {
+        font-size: 0.85rem !important;
+    }
+    .single-progress .label {
+        font-size: 0.8rem;
+        padding: 2px 6px;
+    }
+
+    /* Services */
+    .services-wrapper .card {
+        padding: 25px 15px;
+    }
+    .services-wrapper .card h3 {
+        font-size: 1.2rem !important;
+    }
+    .services-wrapper .card p {
+        font-size: 0.85rem;
+    }
+
+    /* Portfolio */
+    .portfolio-section .card {
+        min-height: 250px;
+    }
+    .portfolio-section .card span {
+        height: 250px;
+    }
+
+    /* Contact */
+    .contact-section .form-control,
+    .contact-section textarea {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    .call-detail label,
+    .call-detail a {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-img img {
+        max-width: 100px;
+    }
+    .footer-section .social-icon a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    .banner-section {
+        min-height: 60vh;
+    }
+    .banner-section h1 {
+        font-size: 1.8rem !important;
+    }
+    .banner-section p {
+        font-size: 0.85rem;
+    }
+
+    /* About */
+    .about-wrapper .nav-pills {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .about-wrapper ul li .nav-link {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+
+    /* Portfolio */
+    .portfolio-section .card {
+        min-height: 200px;
+    }
+    .portfolio-section .card span {
+        height: 200px;
+    }
+
+    /* Contact */
+    .contact-section img {
+        max-width: 90%;
+    }
+    .contact-section .main-btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-section {
+        padding: 20px 0;
+    }
+}
+
+/* Fix for landscape orientation on small devices */
+@media (max-height: 500px) and (orientation: landscape) {
+    .banner-section {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .banner-section h1 {
+        font-size: 1.8rem !important;
+    }
 }
